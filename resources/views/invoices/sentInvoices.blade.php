@@ -152,7 +152,7 @@
                     [10, 25, 50, 100, -1],
                     [10, 25, 50, 100, 'All'],
                 ],
-                buttons: ['copy', 'excel', 'pdf', 'print'],
+                buttons: ['copy', 'excel', 'print'],
                 sort: false,
                 "paging": false,
             });

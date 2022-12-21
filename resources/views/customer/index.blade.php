@@ -94,7 +94,7 @@
 			var table = $('#example2').DataTable( {
 				lengthChange: true,
                // responsive: true,
-				buttons: [ 'copy', 'excel', 'pdf', 'print']
+				buttons: [ 'copy', 'excel', 'print']
 			} );
 
 			table.buttons().container()
