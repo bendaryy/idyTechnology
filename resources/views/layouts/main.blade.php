@@ -76,6 +76,12 @@
                         <div class="menu-title">@lang('site.dashboard')</div>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('activity') }}">
+                        <div class="parent-icon"><i class='bx bx-barcode'></i></div>
+                        <div class="menu-title">اكواد النشاط الضريبى</div>
+                    </a>
+                </li>
 
                 {{-- المنتجات --}}
                 {{-- <li class="menu-label">المنتجات</li> --}}

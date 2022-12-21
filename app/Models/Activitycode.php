@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Activitycode extends Model
 {
     use HasFactory;
+    protected $table = 'activity_code';
     protected $guarded = [];
 }

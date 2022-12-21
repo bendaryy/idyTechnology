@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ActivityCodeController;
 use App\Http\Controllers\ApisettingController as apisetting;
 use App\Http\Controllers\CategoryController as category;
 use App\Http\Controllers\CompanyController as company;
@@ -164,6 +165,16 @@ Route::group(
 
 // get company api
 Route::get('getcompany/{id}', [CustomerController::class, 'getCompany'])->name('getCompany');
+
+
+// activity code
+
+Route::get('activitycode',[ActivityCodeController::class,'index'])->name("activity");
+Route::get('createactivitycode',[ActivityCodeController::class,'create'])->name("createactivitycode");
+Route::post('activitycode',[ActivityCodeController::class,'store'])->name("storeactivitycode");
+Route::get('activitycode/{id}',[ActivityCodeController::class,'edit'])->name("editactivitycode");
+Route::put('activitycode/{id}',[ActivityCodeController::class,'update'])->name("updateactivitycode");
+Route::delete('activitycode/{id}',[ActivityCodeController::class,'destroy'])->name("destroyactivitycode");
 
 
 // Remote Server
